@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ahmed Elsayed</title>
+    <style>
+        body {
+            width: 90%;
+            max-width: 900px;
+            margin: 2em auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0,1fr));
+            grid-gap: 10px;
+        }
+        header,
+        footer {
+		border-radius: 5px;
+		padding: 10px;
+		background-color: rgb(207,232,220);
+		border: 2px solid rgb(79,185,227);
+	}
+	aside {
+		border-right: 1px solid #999;
+
+	}
+	header {
+		grid-column: 1 / 13;
+		grid-row: 1;
+	}
+
+	article {
+		grid-column: 4 / 13;
+		grid-row: 2;
+	}
+
+	aside {
+		grid-column: 1 / 4;
+		grid-row: 2;
+	}
+
+	footer {
+		grid-column: 1 / 13;
+		grid-row: 3;
+	}
+        ul {
+	        display: flex;
+                padding-left: 0;
+		list-style-type: none; 
+	}
+	.list a {
+                margin: 3px; 
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		text-align: center;
+		border: 2px solid rgba(0,0,200,0.6);
+		background: rgba(0,0,200,0.3);
+		color: rgba(0,0,200,0.6);
+		box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+		padding: 3px 10px;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	.list a:hover {
+		background-color: rgb(66, 28, 40);
+		color: #fff;
+	}
+    </style>
+     <script src="script.js" defer></script> 
+</head>
+
+<body>
+    <div class="container">
+        <header>Ahmed Elsayed</header>
+        <article>
+	<embed id="gameHolder" src="Ahmed_Elsayed_Resume.htm" quality="high"
+       bgcolor="#ffffff" width=100% height=450px
+       name="project_report" align="middle" >
+        </article>
+        <aside><h2>Project Reports</h2>
+           <ul class="list" >
+	   <li><a name="Project_Report.htm" onclick="showGame(this);return false;">Senior_Design</a></li>
+	   <li><a name="Ahmed_Elsayed_HW4.htm" onclick="showGame(this);return false;">OTA</a></li>
+           </ul>
+
+	   <h2>Future Projects</h2>
+	   <ul class="list">
+	   <li><a>ADC</a></li>
+	   <li><a>DAC</a></li>
+           <li><a>PLL</a></li>
+	   </ul>
+	  
+	</aside>
+        <footer>Contact me for pdfs</footer>
+    </div>
+
+</body>
+
+</html>
